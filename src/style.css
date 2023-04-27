@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background: #488381;
+  background-image: url(imgsscred/assassins-creed-valhalla-female-eivor-4k-1j-1920x1080.jpg);
+  background-repeat: no-repeat;
+}
+html {
+  margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+input[type="text"] {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.centerTex {
+  text-align: center;
+}
+.center {
+  justify-content: center;
+}
+.mainContainer {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  border-radius: 8px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  place-items: center;
+}
+/*GRID*/
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid__ingrasaTuNumero {
+  grid-column: 1/4;
+}
+.grid__btnValidar {
+  grid-row: 3/3;
+  grid-column: 3/3;
+}
+.grid__icono__input {
+  grid-column: 2/4;
+}
+
+.labelTitulo {
+  font-size: 25px;
+}
+/*TARJETA*/
+.card-item-position {
+  color: #fff;
+  justify-content: center;
+}
+.chip {
+  width: 50px;
+  height: 45px;
+  padding-left: 31px;
+}
+.tarjeta {
+  background-color: #0e414189;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+  width: 400px;
+  height: 230px;
+  margin-left: 20px;
+  background-image: url(img/54e0276dccb22d00af614c797a0b7f31.jpg);
+}
+.digitosTarjeta {
+  margin-left: 92px;
+  font-size: 20px;
+}
+.digitosNombre {
+  margin-left: 92px;
+  font-size: 20px;
+}
+
+/*BOTON VALIDAR*/
+.btnValidar {
+  margin: 0 auto;
+}
+
+.btn__validar {
+  cursor: pointer;
+  --color: #0e4141;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--color);
+  padding: 15px 43px;
+  border: 2px solid var(--color);
+}
+.btn__validar::before,
+.btn__validar::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: width 0.25s 0.15s, height 0.25;
+}
+.btn__validar::before {
+  top: -13px;
+  left: -13px;
+  border-width: 3px 0 0 3px;
+}
+.btn__validar::after {
+  bottom: -13px;
+  right: -13px;
+  border-width: 0 3px 3px 0;
+}
+.btn__validar:hover::before,
+.btn__validar:hover::after {
+  width: calc(100% + 23px);
+  height: calc(100% + 23px);
+}
+
+/*IMAGENES*/
+.assLogo {
+  width: 175px;
+}
+/*True False Tarjeta*/
+#card-true {
+  display: none;
+}
+#card-false {
+  display: none;
+}

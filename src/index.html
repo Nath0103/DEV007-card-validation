@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!--DESPUES DE REALIZAR UNA COMPRA VAMOS A VERIFICAR LA TARJETA-->
+
+<body>
+  <img src="imgsscred/assassins-logo-02.png" alt="logo" class="assLogo">
+  <main class="mainContainer grid__container">
+    <section class="centerTex grid__ingrasaTuNumero labelTitulo">
+      <h1>Ingresa el numero de tu tarjeta para validar tu compra</h1>
+    </section>
+
+    <section class="tarjeta card-item-position">
+      <img src="img/chip-tarjeta.png" class="chip">
+      <p id="digitosTarjeta" class="digitosTarjeta">0000 0000 0000 0000</p>
+      <p id="digitosNombre" class="digitosNombre">Nombre</p>
+    </section>
+
+    <section class="grid__icono__input">
+      <input type="text" placeholder="#### #### #### 0000" id="tuTarjeta" minlength="16" maxlength="16" required>
+      <input type="text" placeholder="Tu Nombre" id="tuNombre" required>
+    </section>
+    <section class="grid__btnValidar">
+      <button id="validarBtn" class="btnValidar btn__validar">Validar</button>
+    </section>
+    <section id="card-true" class="trueCard">
+      <h1>tu tarjeta es VALIDA ✅</h1>
+    </section>
+    <section id="card-false" class="falseCard">
+      <h1>lo sentimos tu tarjeta es INVALIDA ❌</h1>
+    </section>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+<!---->
+
 </html>
