@@ -22,7 +22,8 @@
     </section>
 
     <section class="grid__icono__input">
-      <input type="text" placeholder="#### #### #### 0000" id="tuTarjeta" minlength="16" maxlength="16" required>
+      <input type="number" onkeypress="if (this.value.length > 15) return false;" placeholder=" #### #### #### 0000"
+        id="tuTarjeta" minlength="16" maxlength="16" required>
       <input type="text" placeholder="Tu Nombre" id="tuNombre" required>
     </section>
     <section class="grid__btnValidar">
