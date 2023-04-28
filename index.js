@@ -1,8 +1,9 @@
 import validator from "./validator.js";
-
+//                      llamado del dom👇
 const validatorBtn = document.getElementById("validarBtn");
 const numerosInput = document.getElementById("tuTarjeta");
 const nombreInput = document.getElementById("tuNombre");
+
 validatorBtn.addEventListener("click", () => {
   const numerosInput = document.getElementById("tuTarjeta").value;
   const nombreInput = document.getElementById("tuNombre").value;
@@ -11,15 +12,13 @@ validatorBtn.addEventListener("click", () => {
     alert("llena los campos");
     return;
   }
-  const resultado = validator.isValid(
-    document.getElementById("tuTarjeta").value
-  );
+  const resultado = validator.isValid(numerosInput);
   if (resultado === true) {
     document.getElementById("card-true").style.display = "block";
   } else {
     document.getElementById("card-false").style.display = "block";
   }
-  const maski = validator.maskify(document.getElementById("tuTarjeta").value);
+  const maski = validator.maskify(numerosInput);
   alert(maski);
 });
 
